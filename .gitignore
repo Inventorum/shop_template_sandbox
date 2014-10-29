@@ -1,6 +1,7 @@
 /.installed.cfg
 /bin
 /node_modules
+/prosthetic/node_modules
 # according to http://web.archive.org/web/20120629000805/http://devnet.jetbrains.net/docs/DOC-1186
 /.idea/dictionaries
 /.idea/workspace.xml
