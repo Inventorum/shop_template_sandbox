@@ -1,0 +1,3 @@
+[submodule "prosthetic"]
+	path = prosthetic
+	url = https://github.com/stamen/prosthetic.git
