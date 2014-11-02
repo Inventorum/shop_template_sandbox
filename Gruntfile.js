@@ -6,6 +6,10 @@ module.exports = function(grunt) {
 
     // Configure Grunt
     grunt.initConfig({
+
+        config : {
+           "url": "http://example.com"
+        },
         browserSync: {
             default_options: {
                 bsFiles: {
@@ -37,10 +41,22 @@ module.exports = function(grunt) {
                     nospawn: true
                 }
             }
+        },
+        express: {
+            options: {
+                "port" : "8001"
+            },
+            development: {
+                options: {
+                    script: 'prosthetic/server.js',
+                    args: [
+                        '-p <%= config.url %> ops/own-css.json -s -r'
+                    ]
+                }
+            }
         }
-
     });
 
     // Creates the `server` task
-    grunt.registerTask('default', ['browserSync', 'watch']);
+    grunt.registerTask('default', ['express:development','browserSync','watch']);
 };

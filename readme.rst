@@ -11,7 +11,6 @@ Prerequisites
 
 Mising
 =============
-- grunt statement to execute prostetic server before browser-sync
 - less-compressor
 
 
