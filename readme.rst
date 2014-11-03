@@ -7,11 +7,19 @@ This sandbox can be used to style Shop-Templates without local instance of a Web
 
 Prerequisites
 =============
-- installed NodeJS at least v0.10.32
+- installed NodeJS at least v0.10.32 from http://http://nodejs.org/
+
+Installation
+=============
+ git clone https://github.com/Inventorum/shop_template_sandbox.git
+ cd shop_template_sandbox
+ sh install.sh
+
+run the themeserver by running
+ grunt
 
 Mising
 =============
-- install guide
 
 	
 	
