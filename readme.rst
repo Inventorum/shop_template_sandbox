@@ -11,8 +11,7 @@ Prerequisites
 
 Mising
 =============
-- less-compressor
-
+- install guide
 
 	
 	
