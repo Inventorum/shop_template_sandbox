@@ -29,7 +29,7 @@ module.exports = function(grunt) {
                 },
                 files: {
                     // target.css file: source.less file
-                    "prosthetic/styles/all.css": "less/all.less"
+                    "prosthetic/styles/all.css": "less/**/*.less"
                 }
             }
         },
@@ -47,7 +47,7 @@ module.exports = function(grunt) {
                 // Override defaults here
                 script :'prosthetic/server.js',
                 port : 8001,
-                args: ['-p <%= config.url %> ops/own-css.json', '-s', '-r']
+                args: ['prosthetic/ops/own-css.json','-p <%= config.url %>', '-s', '/:prosthetic', '-r']
             },
             dev: {
                 options: {
@@ -58,5 +58,6 @@ module.exports = function(grunt) {
     });
 
     // Creates the `server` task
-    grunt.registerTask('default', ['express:dev', 'browserSync', 'watch']);
+    grunt.registerTask('default', ['express:dev','browserSync','watch']);
+    grunt.registerTask('bs', ['browserSync','watch']);
 };
