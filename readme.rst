@@ -11,12 +11,16 @@ Prerequisites
 
 Installation
 =============
- git clone https://github.com/Inventorum/shop_template_sandbox.git
- cd shop_template_sandbox
- sh install.sh
+::
+
+    git clone https://github.com/Inventorum/shop_template_sandbox.git
+    cd shop_template_sandbox
+    sh install.sh
 
 run the themeserver by running
- grunt
+::
+
+    grunt
 
 Mising
 =============
