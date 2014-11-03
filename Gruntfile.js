@@ -44,19 +44,19 @@ module.exports = function(grunt) {
         },
         express: {
             options: {
-                "port" : "8001"
+                // Override defaults here
+                script :'prosthetic/server.js',
+                port : 8001,
+                args: ['-p <%= config.url %> ops/own-css.json', '-s', '-r']
             },
-            development: {
+            dev: {
                 options: {
-                    script: 'prosthetic/server.js',
-                    args: [
-                        '-p <%= config.url %> ops/own-css.json -s -r'
-                    ]
+                    script: 'prosthetic/server.js'
                 }
             }
         }
     });
 
     // Creates the `server` task
-    grunt.registerTask('default', ['express:development','browserSync','watch']);
+    grunt.registerTask('default', ['express:dev', 'browserSync', 'watch']);
 };
