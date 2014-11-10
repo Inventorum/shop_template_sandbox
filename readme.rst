@@ -16,7 +16,7 @@ Installation
 run the themeserver by running
 ::
 
-    grunt
+    bin/grunt
 
 Mising
 =============
