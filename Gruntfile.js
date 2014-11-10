@@ -59,4 +59,5 @@ module.exports = function(grunt) {
 
     // Creates the `server` task
     grunt.registerTask('default', ['express:dev','browserSync','watch']);
+    grunt.registerTask('server', ['express:dev']);
 };
