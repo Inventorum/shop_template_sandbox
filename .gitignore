@@ -1,6 +1,4 @@
 /.installed.cfg
-/bin
-node_modules
 # according to http://web.archive.org/web/20120629000805/http://devnet.jetbrains.net/docs/DOC-1186
 /.idea/dictionaries
 /.idea/workspace.xml
@@ -13,3 +11,13 @@ node_modules
 /.idea/inspectionProfiles/profiles_settings.xml
 /.idea/modules.xml
 /.idea/
+/bin
+/parts
+/develop-eggs
+/var
+/etc
+/node_modules
+/eggs
+/.idea
+/node
+/downloads
